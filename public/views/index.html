@@ -1,41 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TASK API</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK API</title>
 
-		<!-- Tailwind CSS via CDN -->
-		<!--<script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-		<!-- Google Fonts -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-			rel="stylesheet"
-		/>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-		<style>
-			body {
-				font-family: "Inter", sans-serif;
-			}
-		</style>
-	</head>
-	<body
-		class="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 min-h-screen flex items-center justify-center px-4"
-	>
-		<div
-			class="text-center bg-white shadow-xl rounded-xl p-8 sm:p-10 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl h-[550px] flex flex-col justify-center"
-		>
-			<h1 class="text-4xl font-extrabold text-indigo-600 mb-4">TASK API</h1>
-			<p class="text-gray-600 mb-8 text-base sm:text-lg px-4">
-				Gestão de tarefas com Node.js, MongoDB e Swagger.
-			</p>
-			<a
-				href="http://localhost:3400/api-docs"
-				class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300"
-			>
-				Abrir Swagger Docs 🚀
-			</a>
-		</div>
-	</body>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(to bottom right, #e0e7ff, #f3e8ff, #fce7f3);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .container {
+        background-color: white;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 100%;
+        max-width: 720px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #4f46e5;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        color: #4b5563;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+      }
+
+      @media (min-width: 640px) {
+        .description {
+          font-size: 1.125rem;
+        }
+
+        .container {
+          padding: 2.5rem;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #6366f1;
+        color: white;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #4f46e5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">TASK API</h1>
+      <p class="description">
+        Gestão de tarefas com Node.js, MongoDB e Swagger.
+      </p>
+      <a href="http://localhost:3400/api-docs" class="btn">
+        Abrir Swagger Docs 🚀
+      </a>
+    </div>
+  </body>
 </html>
