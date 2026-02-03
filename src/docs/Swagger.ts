@@ -30,7 +30,6 @@ const options: swaggerJSDoc.Options = {
 						},
 					},
 					example: {
-						_id: "643d66f5a4d2d0e9a1f6f870",
 						title: "Estudar Swagger",
 						completed: false,
 					},
